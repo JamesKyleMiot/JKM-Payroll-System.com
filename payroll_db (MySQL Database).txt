@@ -1,0 +1,5 @@
+payroll_db (MySQL Database)
+├── employees (employee data, clock in/out)
+├── users (login credentials, roles)  
+├── time_entries (clock records, hours worked)
+└── payrolls (pay periods, calculations)

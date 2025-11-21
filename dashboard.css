@@ -1,0 +1,349 @@
+/* Enhanced Dashboard Styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 20px;
+    color: white;
+    margin: -20px -20px 40px -20px;
+}
+
+.dashboard-header h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.system-tagline {
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Information Cards */
+.info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-card .card-icon {
+    font-size: 40px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 15px;
+    border-radius: 50%;
+    min-width: 70px;
+    text-align: center;
+}
+
+.info-card .card-content {
+    flex: 1;
+}
+
+.info-card h3 {
+    margin: 0 0 20px 0;
+    color: #1f2937;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.info-item .label {
+    font-weight: 600;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.info-item .value {
+    font-weight: 700;
+    color: #1f2937;
+    font-size: 14px;
+}
+
+/* Payroll Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 15px;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 800;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Features Section */
+.features-section {
+    margin-bottom: 40px;
+}
+
+.features-section h2 {
+    text-align: center;
+    color: #1f2937;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #1f2937;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.feature-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-card li {
+    padding: 8px 0;
+    color: #4b5563;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.feature-card li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin-bottom: 40px;
+}
+
+.quick-actions h2 {
+    text-align: center;
+    color: #1f2937;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+}
+
+.action-btn.people { border-left: 4px solid #10b981; }
+.action-btn.payroll { border-left: 4px solid #3b82f6; }
+.action-btn.timecard { border-left: 4px solid #f59e0b; }
+.action-btn.reports { border-left: 4px solid #ef4444; }
+
+.btn-icon {
+    font-size: 32px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.btn-text strong {
+    display: block;
+    font-size: 16px;
+    color: #1f2937;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.btn-text small {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Enhanced Dashboard Background with Overlay */
+body {
+    background: 
+        linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.2) 100%),
+        url('image/bg of payroll.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Avatar Styles */
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: #4b5563;
+    border-radius: 50%;
+}
+
+.status-dot {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #10b981;
+    border: 2px solid white;
+}
+
+/* Responsive Dashboard */
+@media (max-width: 768px) {
+    .dashboard-header {
+        margin: -10px -10px 30px -10px;
+        padding: 20px;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 24px;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-btn {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
